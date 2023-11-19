@@ -24,7 +24,7 @@ data_sp_val = Hfdata('add your 3D spatial maps Validation data.h5')
 dataloader_sp_val = DataLoader(data_sp_val, batch_size=8, shuffle=False)
 
 data_ts_val = Hfdata('add your 1D time series Validation data.h5')
-dataloader_ts_v = DataLoader(data_ts_val, batch_size=8, shuffle=False)
+dataloader_ts_val = DataLoader(data_ts_val, batch_size=8, shuffle=False)
 
 class Hfdata_test(Dataset):
     def __init__(self, data_dir, file_name):
